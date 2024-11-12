@@ -7,7 +7,7 @@ const downloadAndUpload = async (buffer, id) => {
     formData.append("file", blob, "targets.mind");
 
     const response = await fetch(
-      `https://ar-backend-j397.onrender.com/api/v1/user/updatepropject/${id}`,
+      `https://project-be-z867.onrender.com/api/v1/user/updatepropject/${id}`,
       // `http://localhost:4000/api/v1/user/updatepropject/${id}`,
 
       {
@@ -24,7 +24,7 @@ const downloadAndUpload = async (buffer, id) => {
     const data = await response.json();
     console.log("File uploaded to Cloudinary:", data);
     // window.location.href = "http://localhost:3000/userdashboard";
-    window.location.href = "https://ar-visual.vercel.app/userdashboard";
+    window.location.href = "https://travelar.vercel.app/userdashboard";
   } catch (error) {
     console.error("Error uploading file to Cloudinary:", error);
   }
@@ -62,7 +62,7 @@ function handleFiles(files, id) {
 async function fetchAndSortData() {
   try {
     const response = await fetch(
-      `https://ar-backend-j397.onrender.com/api/v1/user/getlatestproject`,
+      `https://project-be-z867.onrender.com/api/v1/user/getlatestproject`,
 
       // `http://localhost:4000/api/v1/user/getlatestproject`,
 
