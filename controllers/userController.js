@@ -532,7 +532,7 @@ ${url}
 Thank you for choosing us for your project. If you have any questions or need further assistance, please don't hesitate to contact us.
 
 Best regards,
-Godspeed
+TravelAR
     `;
     await sendEmail(user.email, "Godspeed Project is Ready", message);
 
