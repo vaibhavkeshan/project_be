@@ -235,7 +235,7 @@ export const forgetPasswordController = async (req, res) => {
     const message = `
     Click on the link to reset your password ${url} if you have not request then please ignore
     `;
-    await sendEmail(user.email, "Godspeed Reset Password", message);
+    await sendEmail(user.email, "TravelAR Reset Password", message);
 
     console.log("resetToken", resetToken);
     res.status(200).send({
@@ -534,7 +534,7 @@ Thank you for choosing us for your project. If you have any questions or need fu
 Best regards,
 TravelAR
     `;
-    await sendEmail(user.email, "Godspeed Project is Ready", message);
+    await sendEmail(user.email, "TravelAR Project is Ready", message);
 
     res.status(200).send({
       success: true,
